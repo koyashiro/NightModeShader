@@ -2,7 +2,7 @@
 
 ## Package URL
 
-`https://github.com/koyashiro/NightModeShader.git?path=Packages/net.koyashiro.nightmodeshader`
+`https://github.com/koyashiro/NightModeShader.git`
 
 ## Unity Package Manager によるインストール
 
@@ -14,7 +14,7 @@
 
 ![image](https://user-images.githubusercontent.com/6698252/126033246-b82e6d11-198e-4617-a006-ebf086518892.png)
 
-3. `https://github.com/koyashiro/NightModeShader.git?path=Packages/net.koyashiro.nightmodeshader` を貼り付けて `Add` を選択する。
+3. `https://github.com/koyashiro/NightModeShader.git` を貼り付けて `Add` を選択する。
 
 ![image](https://user-images.githubusercontent.com/6698252/126647706-5dafd95f-6f40-46d5-9075-daf1ba61876d.png)
 
