@@ -56,6 +56,13 @@ Shader "koyashiro/NightModeShader"
                     discard;
                 }
 
+                if ((_ScreenParams.x == 1280 && _ScreenParams.y == 720)
+                    || (_ScreenParams.x == 1920 && _ScreenParams.y == 1080)
+                    || (_ScreenParams.x == 4096 && _ScreenParams.y == 2160))
+                {
+                    discard;
+                }
+
 #if defined(USING_STEREO_MATRICES)
                 float3 cameraPos = (unity_StereoWorldSpaceCameraPos[0] + unity_StereoWorldSpaceCameraPos[1]) / 2;
 #else
@@ -110,6 +117,13 @@ Shader "koyashiro/NightModeShader"
             {
                 bool isMirror = unity_CameraProjection[2][0] != 0.f || unity_CameraProjection[2][1] != 0.f;
                 if (isMirror)
+                {
+                    discard;
+                }
+
+                if ((_ScreenParams.x == 1280 && _ScreenParams.y == 720)
+                    || (_ScreenParams.x == 1920 && _ScreenParams.y == 1080)
+                    || (_ScreenParams.x == 4096 && _ScreenParams.y == 2160))
                 {
                     discard;
                 }
