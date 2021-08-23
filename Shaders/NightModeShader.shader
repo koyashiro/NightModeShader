@@ -50,11 +50,11 @@ Shader "koyashiro/NightModeShader"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                /* bool isMirror = unity_CameraProjection[2][0] != 0.f || unity_CameraProjection[2][1] != 0.f; */
-                /* if (isMirror) */
-                /* { */
-                /*     discard; */
-                /* } */
+                bool isMirror = unity_CameraProjection[2][0] != 0.f || unity_CameraProjection[2][1] != 0.f;
+                if (isMirror)
+                {
+                    discard;
+                }
 
 #if defined(USING_STEREO_MATRICES)
                 float3 cameraPos = (unity_StereoWorldSpaceCameraPos[0] + unity_StereoWorldSpaceCameraPos[1]) / 2;
